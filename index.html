@@ -64,3 +64,41 @@
             <td>7 $</td>
         </tr>
     </table>
+    <hr>
+    <h1>Algebric Alogorithms</h1>
+    <blockquote>Algebra is one of the definitive and oldest branches of mathematics,
+       and design of computer algorithms is one of the youngest. Despite this generation gap, 
+       the two disciplines beautifully interweave. Firstly, modern computers would be somewhat useless
+        if they were not able to carry out arithmetic and algebraic computations
+       efficiently, so we need to think on dedicated, sometimes rather sophisticated algorithms for these operations. </blockquote>
+
+       <a href="https://www.coursera.org/learn/algebra-and-algorithms">Click here to know more</a>
+      <pre>  // Returns first number whose factorial
+        // divides x.
+        static int firstFactorialDivisibleNumber(int x)
+        {
+            int i = 1; // Result
+            int fact = 1;
+            for (i = 1; i < x; i++) {
+                fact = fact * i;
+                if (fact % x == 0)
+                    break;
+            }
+     
+            return i;
+        }
+     
+        // Driver code
+        public static void main(String[] args)
+        {
+            int x = 16;
+            System.out.print(firstFactorialDivisibleNumber(x));
+        }
+    }
+  </pre> 
+
+        
+        </body>
+</html>
+
+
